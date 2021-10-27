@@ -8,7 +8,7 @@ class CityScreen extends StatefulWidget {
 }
 
 class _CityScreenState extends State<CityScreen> {
-  String cityName = '';
+  String cityName = ''; //what user will send back to location screen
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,7 +50,8 @@ class _CityScreenState extends State<CityScreen> {
               ),
               TextButton(
                 onPressed: () {
-                  Navigator.pop(context, cityName);
+                  Navigator.pop(
+                      context, cityName); //pop the page and send data back
                 },
                 child: const Text(
                   'Get Weather',

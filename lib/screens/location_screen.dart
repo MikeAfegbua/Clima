@@ -38,11 +38,11 @@ class _LocationScreenState extends State<LocationScreen> {
         return;
       }
       double temp = weatherData['main']['temp'];
-      temperature = temp.toInt();
-      var condition = weatherData['weather'][0]['id'];
+      temperature = temp.toInt(); //get temp
+      var condition = weatherData['weather'][0]['id']; //get humidity
+      cityName = weatherData['name']; //get city name
       weatherIcon = weather.getWeatherIcon(condition);
       weatherMessage = weather.getMessage(temperature);
-      cityName = weatherData['name'];
     });
   }
 

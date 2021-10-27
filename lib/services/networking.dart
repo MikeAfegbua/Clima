@@ -1,4 +1,5 @@
 // ignore_for_file: avoid_print
+//THIS CLASS HELPS TO WORK WITH API AND CONVERT THE QUERY TO JSON FORMAT
 
 import 'package:http/http.dart' as http;
 import 'dart:convert';
